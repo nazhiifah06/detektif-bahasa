@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0e1621">
+<title>مُحَقِّقُ اللُّغَة – Detektif Bahasa Arab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="brand">
+    <h1 class="ar" lang="ar">مُحَقِّقُ اللُّغَة</h1>
+    <p class="sub">Detektif Bahasa Arab. 4 level, 3 nyawa untuk seluruh permainan. Nyawa hanya pulih 1 setiap naik level.</p>
+    <label class="switch"><input type="checkbox" id="scareTgl" checked onchange="setScare(this.checked)"> Efek kejutan aktif (suara keras dan getar)</label>
+  </header>
+
+  <div class="hud" id="hud"></div>
+
+  <h2 id="title"></h2>
+  <div class="story" id="story"></div>
+
+  <h2>Petunjuk</h2>
+  <div class="bar"><i id="fill"></i></div>
+  <div class="hint" id="count"></div>
+  <div class="clues" id="clues"></div>
+  <div id="panel"></div>
+
+  <h2>Tersangka</h2>
+  <div class="sus" id="sus"></div>
+  <p class="hint" id="accHint"></p>
+  <div id="end"></div>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
